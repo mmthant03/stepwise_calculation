@@ -1,5 +1,6 @@
 import numpy as np
 import homework1_jpcaltabiano_mmthant as hw1
+import homework1_smile as smile
 
 def test_problem4():
     x = np.array([1, 3, 5])
@@ -46,9 +47,15 @@ def test_problem13():
     print(A, x, x.T)
     print(hw1.problem13(A, x.T))
 
+def test_fPC():
+    y = np.array([ 66, 18, 38, 61 ])
+    yhat = np.array([ 65, 19, 38, 60 ])
+    print(y, yhat)
+    print(smile.fPC(y, yhat))
 # test_problem4()
 # test_problem5()
 # test_problem6()
 # test_problem7()
 # test_problem10()
-test_problem13()
+# test_problem13()
+test_fPC()
