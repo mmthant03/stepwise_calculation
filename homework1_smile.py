@@ -78,7 +78,7 @@ if __name__ == "__main__":
         test_acc = measureAccuracyOfPredictors(predictors, testingFaces, testingLabels)
         trainl.append(train_acc)
         testl.append(test_acc)
-        print(f'n \t {round(train_acc,4)} \t {round(test_acc,4)}')
+        print(f'{400*a} \t {round(train_acc,4)} \t {round(test_acc,4)}')
 
     if show:
         plt.plot(trainl, label="Train")
